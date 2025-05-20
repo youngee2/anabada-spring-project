@@ -1,0 +1,127 @@
+@import url("https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css");
+
+* {
+    font-family: 'NanumBarunGothic';
+}
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+header,
+section,
+footer,
+nav,
+img,
+form,
+figcaption,
+figure,
+i,
+p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+.member1{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10%;
+    align-items:center;
+}
+
+
+.member2{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-bottom: 10%;
+    align-items:center;
+}
+
+.member3{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10%;
+    align-items:center;
+}
+
+.member-img{
+    position:relative;
+    max-width: 55%;
+    height: auto; 
+    left: auto;
+
+}
+
+.member-img2{
+    position:relative;
+    max-width: 55%;
+    height: auto; 
+    left: auto;
+
+}
+
+.member-menu{
+    margin-bottom: 3%;
+    font-size: 2.5vw;
+    color: #337A98;
+}
+
+.member-minititle{
+    margin-bottom: 10%;
+    font-size: 2vw;
+    color:rgb(75, 75, 75);
+    font:bold
+
+}
+
+.member-title{
+margin-left: 10%;
+margin-bottom: 3%;
+font-weight: 900;
+font-size: 2.5vw;
+margin-top:10%;
+background-color: #B8E9FF;
+}
+
+.member-title{
+    margin-bottom: 3%;
+    color: #4C6D81;
+    }
+
+
+.member-title2{
+    margin-right: 10%;
+        text-align: right;
+        margin-top: 5%;
+        margin-bottom: 3%;
+        font-weight: 900;
+        color: #4C6D81;
+        font-size: 2.5vw;
+        margin-top: 10%;
+    }
+
+.background{
+    background-color: #B8E9FF;
+    padding: 1%;
+}
+
+.a_style:link{
+    text-decoration: none;
+    color:black;
+}
+
+.a_style:visited{
+    text-decoration: none;
+    color:black;
+}
+
+.a_style:hover{
+    color:black;
+    text-decoration: none;
+}
