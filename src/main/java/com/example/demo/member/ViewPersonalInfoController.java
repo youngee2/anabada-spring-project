@@ -1,4 +1,4 @@
-package com.example.demo.board.member;
+package com.example.demo.member;
 
 import java.io.IOException;
 

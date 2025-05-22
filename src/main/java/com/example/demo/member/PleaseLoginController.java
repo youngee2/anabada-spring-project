@@ -1,8 +1,7 @@
-package com.example.demo.board.member;
+package com.example.demo.member;
 
 import java.io.IOException;
 
-import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -10,11 +9,9 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
-import com.example.demo.board.member.MemberDAO;
 
-
-@WebServlet("/Page/Header.do")
-public class LoginController extends HttpServlet {
+@WebServlet("/Page/Login.do")
+public class PleaseLoginController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	@Override
@@ -36,7 +33,7 @@ public class LoginController extends HttpServlet {
 		int report = memberDTO.getReport();
 		dao.close();
 
-		// 정지된 회원이면 로그인 불가
+		// 정지된 회원
 		if (report == 1) {
 			session.invalidate();
 			req.getRequestDispatcher("report.jsp").forward(req, resp);
@@ -49,10 +46,9 @@ public class LoginController extends HttpServlet {
 			resp.sendRedirect("tradeListPage.do?category=7");
 		} else {
 			// 로그인 실패
-			req.setAttribute("ErrMsg", "아이디/비밀번호가 틀립니다. 다시 확인해주세요.");
+			req.setAttribute("ErrMsg", "아이디/비밀번호를 확인해주세요.");
 			req.getRequestDispatcher("Login.jsp").forward(req, resp);
 
 		}
-
 	}
 }

@@ -1,15 +1,12 @@
-package com.example.demo.board.member;
+package com.example.demo.member;
 
 import java.io.IOException;
 
-import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import jakarta.servlet.http.HttpSession;
-import com.example.demo.board.member.MemberDAO;
 
 @WebServlet("/Page/ManageSignOut.do")
 public class ManageSignOutController extends HttpServlet {

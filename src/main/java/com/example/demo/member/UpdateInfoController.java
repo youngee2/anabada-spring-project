@@ -1,9 +1,7 @@
-package com.example.demo.board.member;
+package com.example.demo.member;
 
 import java.io.IOException;
 
-import com.example.demo.board.member.MemberDAO;
-import com.example.demo.board.member.MemberDTO;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;

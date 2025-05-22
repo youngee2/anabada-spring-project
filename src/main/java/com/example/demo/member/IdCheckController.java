@@ -1,18 +1,13 @@
-package com.example.demo.board.member;
+package com.example.demo.member;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.net.URLEncoder;
 import java.util.regex.Pattern;
 
-import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import jakarta.servlet.http.HttpSession;
-import com.example.demo.board.member.MemberDAO;
 
 @WebServlet("/Page/IdcheckForm.do")
 public class IdCheckController extends HttpServlet {
