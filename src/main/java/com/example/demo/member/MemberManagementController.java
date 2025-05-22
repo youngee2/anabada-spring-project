@@ -1,7 +1,6 @@
-package com.example.demo.board.member;
+package com.example.demo.member;
 
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -13,7 +12,6 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import com.example.demo.board.member.MemberDAO;
 
 
 @WebServlet("/Page/MemberManagement.do")

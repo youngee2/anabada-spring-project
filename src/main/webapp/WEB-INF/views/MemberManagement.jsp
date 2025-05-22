@@ -4,8 +4,8 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ page import="com.example.demo.board.report.ReportDAO"%>
 <%@ page import="com.example.demo.board.report.ReportDTO"%>
-<%@ page import="com.example.demo.board.member.MemberDAO"%>
-<%@ page import="com.example.demo.board.member.MemberDTO"%>
+<%@ page import="com.example.demo.member.MemberDAO"%>
+<%@ page import="com.example.demo.member.MemberDTO"%>
 
 <%
 	request.setCharacterEncoding("UTF-8");

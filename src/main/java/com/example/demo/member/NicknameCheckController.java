@@ -1,11 +1,8 @@
-package com.example.demo.board.member;
+package com.example.demo.member;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.net.URLEncoder;
 import java.util.regex.Pattern;
 
-import com.example.demo.board.member.MemberDAO;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
