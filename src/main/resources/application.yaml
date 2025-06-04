@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: demo2
+  mvc: 
+    view: # JSP 뷰 리졸빙
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  web:
+    resources:
+      static-locations: classpath:/static/ # 정적 자원 위치
+  # mysql
+  datasource:
+    url: jdbc:mysql://localhost:3306/${DB_NAME}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop # 엔티티 기반 자동 테이블 생성 (개발 과정에서만 사용)
+    show-sql: true # JPA의 SQL 출력
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect # MySQL 방언
+        format_sql: true # SQL 출력 로그 포매팅
+
+# 웹 인코딩
+server:
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
+
